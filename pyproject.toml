@@ -1,0 +1,23 @@
+[project]
+name = "project-2"
+version = "0.1.0"
+requires-python = ">=3.11"
+dependencies = [
+    "matplotlib",
+    "numpy",
+    "scipy>=1.17.1",
+    "torch",
+]
+
+[project.optional-dependencies]
+notebook = [
+    "ipykernel",
+    "jupyterlab",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
